@@ -26,7 +26,7 @@ public class Main {
             setCommand();
             switch (getCommand()) {
                 case LIST:
-                    if (emailsList.size() > 0) {
+                    if (!emailsList.isEmpty()) {
                         for (String s :
                                 emailsList) {
                             System.out.println(s);
@@ -51,7 +51,7 @@ public class Main {
                     System.out.println("\tКоманда не распознана!");
                     break;
             }
-        } while(cheack);
+        } while (cheack);
     }
 
     static void setCommand() {
